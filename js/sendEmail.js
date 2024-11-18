@@ -25,11 +25,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 function showAlert(message, alertType) {
   const alertBox = document.getElementById('message-alert');
-  alertBox.className = `alert ${alertType} alert-dismissible fade show m-auto`;
-  alertBox.style.display = 'block';
+  alertBox.className = `alert ${alertType} alert-dismissible fade show m-auto text-center`;
   alertBox.innerHTML = `
     ${message}
-    <button type="button" class="close" aria-label="Close" onclick="hideAlert()">
+    <button type="button" id="btnAlert" class="close" aria-label="Close" onclick="hideAlert()">
       <span aria-hidden="true">&times;</span>
     </button>
   `;
@@ -49,6 +48,7 @@ function hideAlert() {
   const alertBox = document.getElementById('message-alert');
   alertBox.classList.remove('show');
   alertBox.classList.add('hide');
+  alertBox.innerHTML('');
   
   // Después de la animación, ocultar completamente
   setTimeout(() => {

@@ -9,6 +9,14 @@
         color: white;
     }
     #contact{
+      #message-alert{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+      }
       .fade {
         opacity: 0;
         transition: opacity 0.5s ease, transform 0.5s ease;
@@ -22,6 +30,16 @@
       .fade.hide {
         opacity: 0;
         transform: translateY(-20px);
+      }
+      
+      #btnAlert{
+        background: transparent;
+        border: none;
+        width: 41px;
+        height: 32px;
+        span{
+          font-size: 25px;
+        }
       }
         padding: 2%;
         .cont-data-contact{
