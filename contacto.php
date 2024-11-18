@@ -34,6 +34,7 @@
       </div>
     </nav>
       <section id="contact">
+        <div id="message-alert"></div>
         <div class="container cont-data-contact mb-4">
             <div class="row card-data-contact mb-4">
                 <div class="col-lg-5 col-md-12 cont-bg-green">

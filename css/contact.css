@@ -11,6 +11,18 @@
   #contact {
     padding: 2%;
   }
+  #contact .fade {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  #contact .fade.show {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  #contact .fade.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
   #contact .cont-data-contact {
     padding-top: 5%;
   }

@@ -1,11 +1,10 @@
-
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevenir el envío por defecto
+  event.preventDefault();
 
   // Obtener los datos del formulario
   const formData = new FormData(this);
 
-  // Enviar los datos con AJAX
+  // Enviar los datos con AJAX usando fetch
   fetch('sendEmail.php', {
     method: 'POST',
     body: formData,
@@ -13,13 +12,47 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   .then(response => response.text())
   .then(data => {
     if (data.includes('success')) {
-      alert('El mensaje ha sido enviado correctamente.');
+      showAlert('Mensaje enviado correctamente', 'alert-success');
     } else {
-      alert('Hubo un error al enviar el mensaje.');
+      showAlert('Hubo un error al enviar el mensaje', 'alert-success');
     }
   })
   .catch(error => {
     console.error('Error:', error);
-    alert('Hubo un error al enviar el mensaje.');
+    showAlert('Hubo un error al enviar el mensaje', 'alert-success');
   });
 });
+
+function showAlert(message, alertType) {
+  const alertBox = document.getElementById('message-alert');
+  alertBox.className = `alert ${alertType} alert-dismissible fade show m-auto`;
+  alertBox.style.display = 'block';
+  alertBox.innerHTML = `
+    ${message}
+    <button type="button" class="close" aria-label="Close" onclick="hideAlert()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  `;
+  
+  // Mostrar el mensaje con efecto fade
+  setTimeout(() => {
+    alertBox.classList.add('show');
+  }, 10);
+  
+  // Ocultar automáticamente después de 3 segundos con efecto fade-out
+  setTimeout(() => {
+    hideAlert();
+  }, 3000);
+}
+
+function hideAlert() {
+  const alertBox = document.getElementById('message-alert');
+  alertBox.classList.remove('show');
+  alertBox.classList.add('hide');
+  
+  // Después de la animación, ocultar completamente
+  setTimeout(() => {
+    alertBox.style.display = 'none';
+    alertBox.classList.remove('hide');
+  }, 500);
+}

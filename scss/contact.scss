@@ -9,6 +9,20 @@
         color: white;
     }
     #contact{
+      .fade {
+        opacity: 0;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      
+      .fade.show {
+        opacity: 1;
+        transform: translateY(20px);
+      }
+      
+      .fade.hide {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
         padding: 2%;
         .cont-data-contact{
           padding-top: 5%;
