@@ -1,0 +1,12 @@
+.navbar {
+  background-color: rgb(47, 52, 139) !important;
+}
+.navbar .navbar-toggler-icon {
+  filter: brightness(10);
+}
+.navbar ul .nav-item .nav-link {
+  color: white;
+}
+.navbar ul .nav-item .active {
+  color: rgb(7, 165, 79) !important;
+}/*# sourceMappingURL=header.css.map */

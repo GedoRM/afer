@@ -1,0 +1,119 @@
+#weAre{
+    background-color: #f7f7f7;
+    padding: 5% 0;
+    .container{
+      .cont-textImgWe{
+        .cont-textWe{
+          .titleWe{
+            font-weight: bold;
+          }
+          .textWe{
+            font-size: 16px;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            line-height: 1.6;
+
+          }
+        }
+        .cont-imgWe{
+          display: flex;
+          justify-content: center;
+          img{
+            width: 550px;
+          }
+        }
+      }
+    }
+  }
+.active > .page-link{
+    background-color: rgb(7, 165, 79);
+    border-color: rgb(35 126 76);
+    }
+.page-link{
+    color: rgb(47, 52, 139);
+}
+@media (min-width:320px){
+#weAre{
+    .container{
+        .cont-textImgWe{
+            flex-direction: column;
+            .cont-textWe{
+                padding-top: 5%;
+                .titleWe{
+                  text-align: center;
+                  color: rgb(7, 165, 79);
+                }
+                .textWe{
+                  color: rgb(47, 52, 139);
+                }
+            }
+            .cont-imgWe{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#ourProjects{
+    .title-ourProjects{
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3%;
+      color: rgb(7, 165, 79);
+    }
+    .custom-img{
+      height: 300px;
+    }
+    .card-body{
+        .card-title{
+            color: rgb(7, 165, 79);
+        }
+        .card-text{
+            color: rgb(47, 52, 139);
+            font-size: 16px;
+        }
+    }
+}
+}
+@media (min-width:720px){
+    #weAre{
+        .container{
+            .cont-textImgWe{
+                .cont-imgWe{
+                    img{
+                        height: 700px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:1200px){
+    #weAre{
+        .container{
+          .cont-textImgWe{
+            justify-content: space-evenly;
+            flex-direction: row;
+            .cont-textWe{
+              padding: 0 5%;
+              .titleWe{
+                font-weight: bold;
+              }
+              .textWe{
+                line-height: 1.8;
+              }
+            }
+            .cont-imgWe{
+              width: 480px;
+              img{
+                height: 600px;
+              }
+            }
+          }
+        }
+      }
+}

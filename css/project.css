@@ -1,0 +1,94 @@
+#weAre {
+  background-color: #f7f7f7;
+  padding: 5% 0;
+}
+#weAre .container .cont-textImgWe .cont-textWe .titleWe {
+  font-weight: bold;
+}
+#weAre .container .cont-textImgWe .cont-textWe .textWe {
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  line-height: 1.6;
+}
+#weAre .container .cont-textImgWe .cont-imgWe {
+  display: flex;
+  justify-content: center;
+}
+#weAre .container .cont-textImgWe .cont-imgWe img {
+  width: 550px;
+}
+
+.active > .page-link {
+  background-color: rgb(7, 165, 79);
+  border-color: rgb(35, 126, 76);
+}
+
+.page-link {
+  color: rgb(47, 52, 139);
+}
+
+@media (min-width: 320px) {
+  #weAre .container .cont-textImgWe {
+    flex-direction: column;
+  }
+  #weAre .container .cont-textImgWe .cont-textWe {
+    padding-top: 5%;
+  }
+  #weAre .container .cont-textImgWe .cont-textWe .titleWe {
+    text-align: center;
+    color: rgb(7, 165, 79);
+  }
+  #weAre .container .cont-textImgWe .cont-textWe .textWe {
+    color: rgb(47, 52, 139);
+  }
+  #weAre .container .cont-textImgWe .cont-imgWe {
+    width: 100%;
+  }
+  #weAre .container .cont-textImgWe .cont-imgWe img {
+    width: 100%;
+  }
+  #ourProjects .title-ourProjects {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+    color: rgb(7, 165, 79);
+  }
+  #ourProjects .custom-img {
+    height: 300px;
+  }
+  #ourProjects .card-body .card-title {
+    color: rgb(7, 165, 79);
+  }
+  #ourProjects .card-body .card-text {
+    color: rgb(47, 52, 139);
+    font-size: 16px;
+  }
+}
+@media (min-width: 720px) {
+  #weAre .container .cont-textImgWe .cont-imgWe img {
+    height: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  #weAre .container .cont-textImgWe {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  #weAre .container .cont-textImgWe .cont-textWe {
+    padding: 0 5%;
+  }
+  #weAre .container .cont-textImgWe .cont-textWe .titleWe {
+    font-weight: bold;
+  }
+  #weAre .container .cont-textImgWe .cont-textWe .textWe {
+    line-height: 1.8;
+  }
+  #weAre .container .cont-textImgWe .cont-imgWe {
+    width: 480px;
+  }
+  #weAre .container .cont-textImgWe .cont-imgWe img {
+    height: 600px;
+  }
+}/*# sourceMappingURL=project.css.map */

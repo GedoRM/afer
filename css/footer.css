@@ -1,0 +1,107 @@
+footer {
+  padding: 5% 0;
+  background-color: rgb(225, 225, 225);
+}
+footer .container-info {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+footer .container-info .direction, footer .container-info .phone, footer .container-info .email {
+  font-size: 16px;
+  display: flex;
+  height: 30px;
+  align-items: baseline;
+  gap: 10px;
+}
+footer .container-icon-info {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+@media (min-width: 320px) {
+  footer {
+    background-color: rgb(47, 52, 139);
+    color: rgb(255, 255, 255);
+  }
+  footer .container-info {
+    flex-direction: column;
+    gap: 0;
+  }
+  footer .container-info .direction, footer .container-info .phone, footer .container-info .email {
+    height: auto;
+  }
+  footer .cont-info-hours h3 {
+    width: 80%;
+  }
+  footer .cont-info-hours .cont-hour {
+    line-height: 0.5;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container-rs-info {
+    display: flex;
+    gap: 5%;
+  }
+  footer .container-rs-info .title-rs-info {
+    width: 200px;
+  }
+  footer .contain-logo-footer {
+    margin: 5% 0;
+  }
+  footer .contain-logo-footer img {
+    width: 90px;
+    height: 80px;
+  }
+  footer .container-icon-info {
+    justify-content: center;
+    margin-top: 5px;
+  }
+  footer .res-desk {
+    display: none;
+  }
+}
+@media (min-width: 720px) {
+  footer .cont-info-hours {
+    text-align: center;
+  }
+  footer .cont-info-hours h3 {
+    width: 100%;
+  }
+  footer .cont-info-hours .cont-hour {
+    line-height: 0.5;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container-rs-info {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  footer .container-rs-info .title-rs-info {
+    width: auto;
+    text-align: center;
+  }
+  footer .contain-logo-footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .contain-logo-footer img {
+    width: 140px;
+    height: 130px;
+  }
+  footer .container-info {
+    align-items: flex-start;
+  }
+  footer .res-mob {
+    display: none;
+  }
+  footer .res-desk {
+    display: block;
+  }
+}/*# sourceMappingURL=footer.css.map */

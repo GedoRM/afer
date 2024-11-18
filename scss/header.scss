@@ -1,0 +1,17 @@
+.navbar{
+    background-color: rgb(47, 52, 139) !important;
+    .navbar-toggler-icon{
+      filter: brightness(10) ;
+    }
+    ul{
+      .nav-item{
+        .nav-link{
+          color: white;
+        }
+        .active{
+          color: rgb(7, 165, 79) !important;
+        }
+      }
+    }
+  
+  }
