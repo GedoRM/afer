@@ -13,6 +13,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   .then(data => {
     if (data.includes('success')) {
       showAlert('Mensaje enviado correctamente', 'alert-success');
+      document.getElementById("contactForm").reset();
     } else {
       showAlert('Hubo un error al enviar el mensaje', 'alert-success');
     }
