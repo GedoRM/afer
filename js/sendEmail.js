@@ -15,12 +15,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       showAlert('Mensaje enviado correctamente', 'alert-success');
       document.getElementById("contactForm").reset();
     } else {
-      showAlert('Hubo un error al enviar el mensaje', 'alert-success');
+      showAlert('Hubo un error al enviar el mensaje', 'alert-danger');
     }
   })
   .catch(error => {
     console.error('Error:', error);
-    showAlert('Hubo un error al enviar el mensaje', 'alert-success');
+    showAlert('Hubo un error al enviar el mensaje', 'alert-danger');
   });
 });
 
@@ -42,18 +42,17 @@ function showAlert(message, alertType) {
   // Ocultar automáticamente después de 3 segundos con efecto fade-out
   setTimeout(() => {
     hideAlert();
-  }, 3000);
+  }, 2000);
 }
 
 function hideAlert() {
   const alertBox = document.getElementById('message-alert');
   alertBox.classList.remove('show');
   alertBox.classList.add('hide');
-  alertBox.innerHTML('');
+  alertBox.innerHTML = '';
   
   // Después de la animación, ocultar completamente
   setTimeout(() => {
-    alertBox.style.display = 'none';
     alertBox.classList.remove('hide');
   }, 500);
 }

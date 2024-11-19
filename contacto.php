@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   </head>
   <body>
@@ -110,6 +111,7 @@
                       <label for="textArea" class="form-label">Mensaje</label>
                       <textarea class="form-control" id="textArea" name="message" required></textarea>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LdzJIMqAAAAAElO0p1Jk5ite6oe2Jk7fgzfec1w"></div>
                     <button type="submit" class="btn btn-sendCustom">Enviar</button>
                   </form>
                 </div>
