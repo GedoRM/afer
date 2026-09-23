@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top">
